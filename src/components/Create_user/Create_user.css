@@ -1,0 +1,53 @@
+.Create_user h2{
+    margin: 20px 0;
+}
+
+.Create_user .inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+@media (max-width: 767px){
+    .Create_user .inputs{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.Create_user .inputs .coolinput{
+    width: 100%;
+    position: relative;
+}
+
+.Create_user button{
+    padding: 10px 20px;
+    background-color: var(--first-color);
+    color: #fff;
+    /* margin-top: 30px; */
+    border-radius: 5px;
+    margin: 30px 0;
+    cursor: pointer;
+    transition: 0.3s;
+    width: -moz-fit-content;
+    width: fit-content;
+    /* margin-top: 30px; */
+}
+
+.Create_user .inputs .coolinput p{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #F44336;
+}
+
+/* App.css */
+.no-spinners::-webkit-outer-spin-button,
+.no-spinners::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.no-spinners {
+    appearance: textfield;
+    -moz-appearance: textfield;
+}

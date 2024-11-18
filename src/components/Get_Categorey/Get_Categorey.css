@@ -1,0 +1,128 @@
+
+
+
+.Get_Categorey > h2{
+    margin-bottom: 20px;
+}
+
+.Get_Categorey .All_Categorey{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+@media (max-width: 991px){
+    .Get_Categorey .All_Categorey{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media (max-width: 767px){
+    .Get_Categorey .All_Categorey{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.Get_Categorey .All_Categorey .Categorey{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    background-color: var(--body-color);
+    box-shadow: 0 2px 8px var(--shadow-color);
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    padding-bottom: 60px ;
+}
+
+.Get_Categorey .All_Categorey .Categorey .img_cat{
+    width: 100%;
+    height: 200px;
+}
+
+.Get_Categorey .All_Categorey .Categorey .img_cat img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.Get_Categorey .All_Categorey .Categorey .icon_company{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    position: absolute;
+    left: 0 ;
+    bottom:20px;
+    width: 100%;
+}
+.Get_Categorey .All_Categorey .Categorey .icon_company svg{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.Get_Categorey .All_Categorey .Categorey .icon_company svg:nth-child(1):hover{
+    color: #03A9F4;
+}
+
+.Get_Categorey .All_Categorey .Categorey .icon_company svg:nth-child(2):hover{
+    color: #FF5722;
+}
+
+
+
+/* ------------------------------------------ */
+
+.delete{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.3); /* خلفية شفافة لإظهار التأثير بشكل أفضل */
+    backdrop-filter: blur(5px); /* تطبيق الضبابية */
+    -webkit-backdrop-filter: blur(5px); /* دعم لمتصفح سفاري */
+    z-index: 100;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete .del{
+    /* border: 1px solid var(--text-color); */
+    background-color: var(--body-color);
+    padding: 30px;
+    text-align: center;
+    width: fit-content;
+    box-shadow: 0 2px 8px var(--shadow-color);
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.delete .del .but_del{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.delete .del .but_del button:nth-child(1){
+    background-color: #F44336;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.delete .del .but_del button:nth-child(2){
+    background-color: #03A9F4;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}

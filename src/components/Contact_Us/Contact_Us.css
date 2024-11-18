@@ -1,0 +1,139 @@
+.contactus{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    align-items: center;
+}
+.contactus .container{
+    padding-left: 200px;
+    padding-right: 200px;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 100px;
+}
+@media(max-width:991px){
+    .contactus .container{
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+}
+
+
+.contactus .container .contact{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 20px;
+}
+
+.contactus .container .contact .contacticon .icons{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.contactus .container .contact .icons .icon{
+    font-size: 25px;
+    position: relative;
+}
+.contactus .container .contact .icons .ic{
+    position: relative;
+    padding: 10px;
+    border: 3px solid var(--first-color);
+    border-radius: 50%;
+}
+
+.contactus .container .contact .contacticon .localicon .ic{
+    padding: 9px 13px;
+}
+.contactus .container .contact span{
+    font-size: 18px;
+}
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .contactus .container .formss{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 50%;
+    flex: 1;
+    /* position: relative; */
+}
+
+.contactus .container .formss >p{
+    color: white;
+    background-color: var(--first-color);
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+.contactus .container .formss button{
+    padding: 10px 20px;
+    background-color: var(--first-color);
+    color: #fff;
+    border-radius: 5px;
+    margin: 0 0 0 auto;
+    cursor: pointer;
+    transition: 0.3s;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-top: 10px;
+}
+.contactus .container .formss h1{
+    margin: 0 auto 0 0;
+}
+
+.contactus .container .formss .coolinput{
+    width: 100%;
+    position: relative;
+}
+
+.contactus .container .formss .coolinput p{
+    position: absolute;
+    right: 0;
+    font-size: 13px;
+    color: red;
+}
+
+.contactus .container .formss .coolinput textarea{
+    height: 200px;
+}
+
+
+
+@media(max-width:767px){
+    .contactus .container{
+        padding-left: 10px;
+        padding-right: 10px;
+        flex-direction: column;
+    }
+    .contactus .container .contact{
+        justify-content: center;
+    }
+    .contactus .container .formss{
+
+    width: 100%;
+    
+}
+}
+

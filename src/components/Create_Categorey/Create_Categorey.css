@@ -1,0 +1,74 @@
+/* 
+body {
+    font-family: Arial, sans-serif;
+  } */
+  
+  .img_upd {
+    width: 200px;
+    height: 200px;
+    border: 2px dashed #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .img_upd span {
+    font-size: 48px;
+    color: #ccc;
+  }
+  
+  .img_upd:hover {
+    border-color: #aaa;
+  }
+
+  .Create_Categorey button {
+    padding: 10px 20px;
+    background-color: var(--first-color);
+    color: #fff;
+    /* margin-top: 30px; */
+    border-radius: 5px;
+    margin: 30px 0;
+    cursor: pointer;
+    transition: 0.3s;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-top: 30px;
+}
+
+
+.Create_Categorey .inputs{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Create_Categorey .inputs .coolinput{
+  width: 100%;
+  position: relative;
+}
+
+.Create_Categorey .inputs .coolinput textarea{
+  height: 200px;
+}
+
+.Create_Categorey .inputs .coolinput p{
+  position: absolute;
+  right: 0;
+  color: red;
+}
+
+.Create_Categorey .inputs .img_upd{
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+.Create_Categorey .img_upd_1 p{
+  position: absolute;
+  left: 5px;
+  color: red;
+  bottom: 5px;
+}

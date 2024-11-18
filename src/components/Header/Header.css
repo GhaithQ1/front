@@ -1,0 +1,352 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* body{
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+} */
+
+.input-field span{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #bcbcbc;
+    font-weight: 700;
+    font-size: 27px;
+}
+ 
+/* .container {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+header{
+    position: absolute;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    /* z-index: 100; */
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 0 40px;
+    box-shadow: 0 0px 8px var(--shadow-color);
+}
+header h1{
+    color: var(--title-color );
+    font-size: 45px;
+    font-weight: 900;
+}
+header h1 > span{
+    -webkit-text-stroke: 2px var(--first-color);
+    -webkit-text-fill-color: transparent;
+} 
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+
+.menu ul{
+  display: flex;
+  list-style: none;
+  align-items: center;
+  position: relative;
+  height: 70px;
+}
+
+.menu ul li > a{
+  cursor: pointer;
+  height: 70px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  position: relative; /* إضافة هذا السطر لتحديد الموضع النسبي */
+  padding: 0 20px;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text-color);
+  
+}
+
+.menu ul li a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--first-color);
+  transition: 0.3s;
+  z-index: -1;
+}
+
+.menu ul li a:hover::before {
+  width: 100%;
+}
+.menu ul li a:hover {
+  color: white;
+}
+
+
+header .menu .singin{
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 600;
+    color:white;
+    background-color:  var(--first-color);
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+header .menu .profil{
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color:var(--text-color);
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+}
+
+header .menu .profil:hover .menuoo{
+  display: flex;
+}
+
+header .menu .profil .menuoo{
+  position: absolute;
+  width: 225px;
+  display: none;
+  flex-direction: column;
+  background-color: var(--sec-color);
+  top: 67px;
+  right: 0;
+  box-shadow: 0 2px 8px var(--shadow-color);
+  border-radius: 10px;
+}
+
+header .menu .profil .menuoo a{
+  padding: 15px 20px;
+  color: hsl(228, 8%, 56%);
+  border-radius: 10px;
+}
+
+header .menu .profil .menuoo a:hover{
+  background-color: var(--first-color);
+  color: white;
+}
+
+header .menu .profil img{
+  width: 50px ;
+  height: 50px;
+  border-radius: 50%;
+  /* border: 2px solid var(--first-color); */
+}
+
+
+header .menu .singin p{
+    font-weight: 600;
+    color:white;
+    text-decoration: none;
+}
+
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 64px;
+    height: 34px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .sliderr {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--first-color);
+    transition: .4s;
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .sliderr:before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    left: 2px;
+    bottom: 2px;
+    z-index: 2;
+    background-color: #e8e8e8;
+    transition: .4s;
+  }
+  
+  .sun svg {
+    position: absolute;
+    top: 6px;
+    left: 36px;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  
+  .moon svg {
+    fill: #73C0FC;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  
+  /* .switch:hover */.sun svg {
+    animation: rotate 15s linear infinite;
+  }
+  
+  @keyframes rotate {
+   
+    0% {
+      transform: rotate(0);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* .switch:hover */.moon svg {
+    animation: tilt 5s linear infinite;
+  }
+  
+  @keyframes tilt {
+   
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    25% {
+      transform: rotate(-10deg);
+    }
+  
+    75% {
+      transform: rotate(10deg);
+    }
+  
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .input:checked + .sliderr {
+    background-color: var(--text-color );
+  }
+  
+  .input:focus + .sliderr {
+    box-shadow: 0 0 1px #183153;
+  }
+  
+  .input:checked + .sliderr:before {
+    transform: translateX(30px);
+  }
+
+
+  .scrolled{
+    background-color: var(--header-color);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(10px);
+}
+
+
+.show{
+  display: none;
+}
+
+
+@media(max-width:991px){
+  .show{
+    display: block;
+  }
+  .menu{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 70px;
+    background-color: var(--sec-color);
+    padding: 10px;
+    width: 100%;
+    justify-content: start;
+    align-items: start;
+    display: none;
+    left: 0;
+  }
+  .menus{
+    display: flex;
+  }
+  .menu ul{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 0;
+    order: 2;
+    width: 100%;
+}
+  .menu ul li{
+    width: 100%;
+
+transition: 0.3s;
+}
+
+ul li a{
+  width: 100%;
+  display: block;
+  padding:10px 0 10px 5px;
+}
+  .menu ul li:hover a{
+background-color: var(--first-color);
+color: white;
+}
+
+header .menu .profil{
+  order: 1;
+  flex-direction: row-reverse;
+  padding:0 0 10px 0;
+}
+.switch {
+order: 3;
+}
+
+}

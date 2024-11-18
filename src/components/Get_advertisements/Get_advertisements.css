@@ -1,0 +1,9 @@
+.Get_advertisement .advertisement .adver .likes svg{
+    color: var(--text-color);
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.Get_advertisement .advertisement .adver .likes svg:hover{
+    color: red;
+}

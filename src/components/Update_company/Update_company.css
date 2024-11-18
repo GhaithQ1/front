@@ -1,0 +1,240 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200..1000&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+
+
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1150px) {
+  :root {
+    --normal-font-size: 1rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  transition: background-color .4s;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  all: unset;
+}
+
+
+
+
+.update_company .img_upd {
+    width: 200px;
+    height: 200px;
+    border: 2px dashed #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+  }
+  
+ .update_company .plus-icon {
+    font-size: 48px;
+    color: #ccc;
+  }
+  
+  .update_company .img_upd:hover {
+    border-color: #aaa;
+  }
+  
+
+  .update_company .inputs form .inputs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  @media(max-width:768px){
+    .update_company .inputs form .inputs{
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .update_company .img_upd {
+      width: 160px;
+    }
+  }
+
+  .update_company .inputs .coolinput{
+    width: 100%;
+  }
+
+  .update_company .inputs .coolinput textarea{
+    height: 200px;
+  }
+
+  .update_company .inputs .img_upd_{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .update_company h2{
+    margin: 20px 0px;
+  }
+
+
+  .update_company button{
+    padding: 10px 20px;
+    background-color: var(--first-color);
+    color: #fff;
+    /* margin-top: 30px; */
+    border-radius: 5px;
+    margin: 30px 0;
+    cursor: pointer;
+    transition: 0.3s;
+    width: fit-content;
+    margin-top:30px ;
+  }
+
+  /* .update_company button:hover{
+    transform: scale(1.05);
+  } */
+
+  .update_company .inputs .coolinput{
+    position: relative;
+  }
+
+  .update_company .inputs .coolinput p{
+    position: absolute;
+    right: 0;
+    color: #F44336;
+  }
+
+ 
+  .update_company .img_upd_ .img_upd_1{
+    position: relative;
+  }
+
+  .update_company .img_upd_ .img_upd_1 p{
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    color: #F44336;
+  }
+
+  .update_company .img_upd_ .img_upd_1 img{
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    z-index: -1;
+  }
+
+
+  /* ------------------------------------------------------------ */
+
+
+  .Update_category h2{
+    margin: 20px 0;
+  }
+
+  .Update_category form{
+    display: flex;
+    gap: 30px;
+  }
+
+  .Update_category .img_upd{
+    width: 300px;
+    height: 250px;
+  }
+
+  .Update_category .img_upd_1 img{
+    z-index: -1;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+  }
+
+  .Update_category .coolinput .image-preview{
+    width: 300px;
+  }
+
+  .Update_category .coolinput textarea{
+    width: 100%;
+    height: 200px;
+  }
+
+  .Update_category .coolinput input{
+    width: 100%;
+  }
+  .Update_category .inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .Update_category button {
+    padding: 10px 20px;
+    background-color: var(--first-color);
+    color: #fff;
+    /* margin-top: 30px; */
+    border-radius: 5px;
+    margin: 30px 0;
+    cursor: pointer;
+    transition: 0.3s;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-top: 30px;
+}
+
+
+.Update_category .inputs .coolinput{
+  width: 100%;
+  position: relative;
+}
+
+.Update_category .inputs .coolinput p{
+  position: absolute;
+  right: 0;
+  color: red;
+}
+
+.Update_category .inputs .img_upd{
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+.Update_category .img_upd_1 p{
+  position: absolute;
+  left: 5px;
+  color: red;
+  bottom: 5px;
+}
+
+@media (max-width: 991px){
+  
+}
+
+
+@media (max-width: 767px){
+
+}
+

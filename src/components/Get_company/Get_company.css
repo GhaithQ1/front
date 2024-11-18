@@ -1,0 +1,283 @@
+
+.Get_company{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.Get_company .Get_company_cart{
+    display: flex;
+    gap: 20px;
+    position: relative;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: var(--body-color);
+    box-shadow: 0 2px 8px var(--shadow-color);
+    border: 1px solid var(--border--color);
+}
+  
+
+.Get_company .Get_company_cart .user_company{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 7px;
+    align-items: center;
+}
+
+.Get_company .Get_company_cart .user_company img{
+    width: 60px ;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.Get_company .Get_company_cart .img_company{
+    position: relative;
+    width: 30%;
+}
+
+.Get_company .Get_company_cart .img_company img:nth-child(1){
+    position: absolute;
+    height: 70px ;
+    width: 70px ;
+    border-radius: 50%;
+    border: 4px solid var(--body-color);
+    top: 5px;
+    left: 5px;
+}
+
+.Get_company .Get_company_cart .img_company img:nth-child(2){
+    border-radius: 10px;
+    width: 100%;
+    height: 250px;
+}
+
+
+.Get_company .Get_company_cart .text_company{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40%;
+}
+
+.Get_company .Get_company_cart .type{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.Get_company .Get_company_cart .text_company h2{
+    margin-bottom: 10px;
+}
+
+.Get_company .Get_company_cart .text_company p{
+    color: var(--title-color);
+}
+
+.Get_company .Get_company_cart .text_company h2{
+    color: var(--title-color);
+}
+
+.Get_company .Get_company_cart .text_company p:nth-child(2){
+    color: var(--text-color);
+}
+
+.Get_company .Get_company_cart .text_company p span{
+    color: var(--text-color);
+}
+
+.Get_company .Get_company_cart .icon_company{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 20px;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.Get_company .Get_company_cart .icon_company svg:nth-child(1):hover{
+    color: #03A9F4;
+}
+.Get_company .Get_company_cart .icon_company svg:nth-child(2):hover{
+    color: #FF5722;
+}
+
+
+@media (max-width: 767px){
+
+    .Get_company .Get_company_cart .type{
+        width: 100%;
+    }
+
+    .Get_company .Get_company_cart .text_company{
+        width: 100%;
+    }
+    .Get_company .Get_company_cart{
+          flex-direction: column;
+    }
+
+    .Get_company .Get_company_cart .img_company{
+        position: relative;
+        width: 100%;
+    }
+
+    .Get_company .Get_company_cart .user_company{
+        position:static;
+        top: 10px;
+        right: 10px;
+        display: flex;
+        flex-direction: row;
+        gap: 7px;
+        align-items: center;
+        width: 100%;
+    }
+    
+
+}
+
+.Get_company .Get_company_cart .icon_company svg:nth-child(1).del_r:hover{
+    color: #FF5722;
+}
+
+
+
+/* =================================================================== */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+
+  .Get_advertisement > h2{
+    margin: 20px 0 5px 0;
+  }
+
+
+.advertisement{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+    gap: 20px;
+    padding:20px 0;
+    padding: 20px 0;
+}
+
+.advertisement .adver{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 20px;
+    position: relative;
+    background-color: var(--sec-color);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+.advertisement .adver .company{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    width: fit-content;
+}
+.advertisement .adver .company img{
+width: 50px;
+height: 50px;
+border-radius: 50%;
+}
+.advertisement .adver .company .name{
+
+}
+
+.advertisement .adver .company .name h1{
+    color: var(--text-color);
+}
+
+.advertisement .adver .company .name span{
+    color: #919297;
+}
+
+
+
+.advertisement .adver .advercompany{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+.advertisement .adver .advercompany .des{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.advertisement .adver .advercompany .des h2{
+color: var(--text-color);
+}
+
+.advertisement .adver .advercompany .des p{
+    padding-bottom: 20px;
+    color: var(--text-color);
+    line-height: 1.4;
+}
+
+
+.advertisement .adver .advercompany .imagescomapny {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: var(--sec-color);
+}
+
+.advertisement .adver .advercompany .imagescomapny img {
+    width: calc(50% - 5px); /* عرض 50% عند وجود أكثر من صورة */
+}
+
+/* عرض الصورة بالكامل عند وجود صورة واحدة فقط */
+.advertisement .adver .advercompany .imagescomapny img:only-child {
+    width: 100%; /* عرض الصورة بالكامل */
+}
+
+
+
+.advertisement .adver .advercompany .likes{
+    margin-top: 10px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(    --shadow-color);
+    font-weight: bold;
+    font-size: 20px;
+    color: var(    --shadow-color);
+    margin-top: auto;
+}
+.advertisement .adver .advercompany .likes p{
+    color: var(--text-color);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.advertisement .adver .advercompany .likes p:hover{
+    color: var(--main-color);
+}
+.advertisement .adver .advercompany .likes p > i{
+
+}
+.advertisement .adver .advercompany .likes span{
+    color: var(--text-color);
+}
+
+
+
+
+

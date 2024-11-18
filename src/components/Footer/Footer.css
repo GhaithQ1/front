@@ -1,0 +1,175 @@
+.Footer {
+  background-color: var(--first-color);
+  color: white;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  border-radius: 30px 30px 0 0;
+  align-items: center;
+}
+
+.Footer .best {
+  flex: 1;
+}
+
+@media (max-width: 991px) {
+  .Footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.Footer nav {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 10px;
+  flex: 1;
+}
+
+.Footer:nth-child(1) nav {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+  align-items: start;
+}
+.Footer nav a {
+  color: white;
+  transition: 0.3s;
+}
+
+.Footer div:nth-child(1) nav a:hover {
+  transform: scale(1.05);
+}
+
+.Footer div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  gap: 10px;
+}
+
+.Footer .icons {
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+  padding-top: 10px;
+  flex: 1;
+}
+
+
+
+
+
+.Footer .icons .icon{
+  font-size: 20px;
+  cursor: pointer;
+} 
+.Footer .cosh p{
+ display: flex;
+ gap: 10px;
+ justify-content: end;
+} 
+.Footer .cosh p {
+  font-size: 18px;
+} 
+
+
+.Footer div:nth-child(2) p  {
+  display: flex;
+  gap: 10px;
+  
+}
+
+.Footer div:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .Footer {
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .Footer div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+  }
+  .Footer div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+.cosh{
+  flex: 1 1;
+  display: flex
+;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+/* ============================================ */
+
+/* From Uiverse.io by satyamchaudharydev */
+/* === removing default button style ===*/
+.Footer div:nth-child(1) .button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  width: fit-content;
+}
+
+/* button styling */
+.Footer div:nth-child(1) .button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255, 255, 255, 0.6);
+  --animation-color: white;
+  --fs-size: 24px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+  width: 100%;
+}
+/* this is the text, when you hover on button */
+.Footer div:nth-child(1) .hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+/* .Footer div:nth-child(1) .button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
+} */
+
+

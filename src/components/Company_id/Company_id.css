@@ -1,0 +1,487 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+/*   
+  :root {
+    --main-color: #3e7dff; 
+    --da-color: #d9e5ff;
+    --sec-color: #fff;
+    --li-color: #fff;
+    --li-blor_color: #ffffff51;
+    --text-color: #080321;
+    --header-color: #ffffff90;
+        --shadow-color: #ddd;
+  }
+  
+  .root_da {
+    --main-color: #3e7dff; 
+    --da-color: #080322;
+    --li-color: #121b4d;
+    --sec-color: #1f2333;
+    --li-blor_color: #121b4d51;
+    --text-color: #fff;
+    --header-color: #090e51a3;
+        --shadow-color: #101012;
+  }
+   */
+  /* body{
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  } */
+  
+  /* .container {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  @media (max-width:667px){
+      .container {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+  } */
+  
+
+  
+  .company {
+    background: var(--sec-color);
+    padding-top: 70px;
+  }
+  
+  .shit{
+      padding: 50px 0;
+  }
+  
+  .company .profilcom {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: var(--sec-color);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px var(    --shadow-color);
+    margin-top: 25px;
+  }
+
+ 
+  
+  .company .profilcom .test {
+    display: flex;
+    position: relative;
+    gap: 20px;
+  }
+
+  
+  @media (max-width:991px){
+      .company .profilcom .test {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+  }
+  
+  
+  .company .profilcom .test img {
+    width: 50%;
+    border-radius: 10px;
+    max-height: 500px;
+  }
+  .company .profilcom .test .img_lo{
+    position: absolute;
+    width: 80px ;
+    height: 80px;
+    border-radius: 50%;
+    border: 4px solid var(--sec-color);
+    top: 5px;
+    right: 5px;
+  }
+  @media (max-width:991px){
+      .company .profilcom .test img {
+          width: 100%;
+          order: 0;
+        }
+  }
+  
+  .company .profilcom .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  @media (max-width:991px){
+      .company .profilcom .info {
+  order: 1;
+        }
+  }
+  
+  .add .advercompany .des{
+    padding: 20px 0;
+  }
+  
+  
+  .company .profilcom .info .infosection {
+  }
+  .company .profilcom .info .infosection h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      border-bottom: 2px solid;
+      padding-bottom: 15px;
+      width: fit-content;
+      margin-left: auto;
+  }
+  .company .profilcom .info .infosection ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  @media (max-width:667px){
+      .company .profilcom .info .infosection ul {
+          flex-direction: column;
+        }
+  }
+  
+  .company .profilcom .info .infosection li {
+    color: var(--text-color);
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: bold;
+    width: calc(50% - 10px);
+    text-align: end;
+  }
+  
+  @media (max-width:667px){
+      .company .profilcom .info .infosection li {
+  width: 100%;
+        }
+  }
+  
+  .company .dec {
+    font-size: 19px;
+    background: var(--sec-color);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px var(--shadow-color);
+    display: flex;
+    gap: 20px;
+  }
+  
+  .company .dec p {
+  color: var(--text-color);
+  line-height: 1.6;
+  }
+  
+  .company .profilcom .info .icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    font-size: 20px;
+  }
+  .company .profilcom .info .icon .stars {
+    color: gold;
+  }
+  
+  .company .profilcom .info .icon .media {
+    display: flex;
+    gap: 20px;
+    padding-right: 40px;
+  }
+  
+  .company .profilcom .info .icon .media svg {
+    cursor: pointer;
+    color: var(--text-color);
+    font-size: 25px;
+    transition: 0.3s;
+  }
+  
+  .company .profilcom .info .icon .media .faFacebook:hover {
+      color: #3b5998;
+  }
+  .company .profilcom .info .icon .media .faInstagram:hover {
+      color: #e4405f;
+  }
+  .company .profilcom .info .icon .media .faLinkedin:hover {
+      color: #0077b5;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .add{
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 40px;
+      padding: 40px 0;
+  }
+  
+  .add .adver{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px 20px;
+      position: relative;
+      background-color: var(--sec-color);
+      border-radius: 10px;
+      box-shadow: 0 2px 8px var(    --shadow-color);
+  }
+  
+  .add .adver  .company_add{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      cursor: pointer;
+      width: fit-content;
+  }
+  .add .adver  .company_add img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  }
+  .add .adver .company_add .name{
+  
+  }
+  
+  .add .adver  .company_add .name h1{
+      font-size: 25px;
+  }
+  
+  .add .adver  .company_add .name span{
+      color: #919297;
+  }
+  
+  
+  
+  .add .adver .adver .company_add{
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+  }
+  
+  
+  .add .adver .adver  .des{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+  }
+  
+  .add .adver .adver  .des h2{
+  color: var(--text-color);
+  }
+  
+  .add .adver .adver  .des p{
+      padding-bottom: 20px;
+      color: var(--text-color);
+      line-height: 1.4;
+  }
+  
+  
+  .add .adver  .imagescomapny {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px;
+      background-color: var(--sec-color);
+  }
+  
+  .add .adver  .imagescomapny img {
+      width: calc(50% - 5px); /* عرض 50% عند وجود أكثر من صورة */
+  }
+  
+  /* عرض الصورة بالكامل عند وجود صورة واحدة فقط */
+  .add .adver  .imagescomapny img:only-child {
+      width: 100%; /* عرض الصورة بالكامل */
+  }
+  
+  
+  
+  .add .adver .advercompany  .likes{
+      margin-top: 10px;
+      padding-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid var(    --shadow-color);
+      font-weight: bold;
+      font-size: 20px;
+      color: var(    --shadow-color);
+      margin-top: auto;
+  }
+  .add .adver .advercompany  .likes p{
+      color: var(--text-color);
+      cursor: pointer;
+      transition: 0.3s;
+  }
+  
+  .add .adver .advercompany .likes p:hover{
+      color: var(--main-color);
+  }
+  .add .adver .advercompany  .likes p > i{
+  
+  }
+  .add .adver .advercompany  .likes span{
+      color: var(--text-color);
+  }
+  
+  
+  /* --------------------------------------------- */
+/* From Uiverse.io by elijahgummer */ 
+.radio {
+  display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-left: auto;
+    padding-right: 15px;
+    margin-bottom: -20px;
+}
+
+.radio > input {
+  position: absolute;
+  appearance: none;
+}
+
+.radio > label {
+  cursor: pointer;
+  font-size: 30px;
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.radio > label > svg {
+  fill: #666;
+  transition: fill 0.3s ease;
+  font-size: 20px;
+}
+
+.radio > label::before,
+.radio > label::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background-color: #ff9e0b;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(0);
+  transition:
+    transform 0.4s ease,
+    opacity 0.4s ease;
+  animation: particle-explosion 1s ease-out;
+}
+
+.radio > label::before {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+}
+
+.radio > label::after {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+}
+
+.radio > label:hover::before,
+.radio > label:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) scale(1.5);
+}
+
+.radio > label:hover {
+  transform: scale(1.2);
+  animation: pulse 0.6s infinite alternate;
+}
+
+/* Star glow and animation on hover */
+.radio > label:hover > svg {
+  fill: #ff9e0b;
+  filter: drop-shadow(0 0 15px rgba(255, 158, 11, 0.9));
+  animation: shimmer 1s ease infinite alternate;
+}
+
+.radio > input:checked + label > svg {
+  fill: #ff9e0b;
+  filter: drop-shadow(0 0 15px rgba(255, 158, 11, 0.9));
+  animation: pulse 0.8s infinite alternate;
+}
+
+.radio > input:checked + label ~ label > svg,
+.radio > input:checked + label > svg {
+  fill: #ff9e0b; /* Highlight the stars */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes particle-explosion {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    filter: drop-shadow(0 0 10px rgba(255, 158, 11, 0.5));
+  }
+  100% {
+    filter: drop-shadow(0 0 20px rgba(255, 158, 11, 1));
+  }
+}
+
+.radio > input:checked + label:hover,
+.radio > input:checked + label:hover ~ label {
+  fill: #e58e09;
+}
+
+.radio > label:hover,
+.radio > label:hover ~ label {
+  fill: #ff9e0b;
+}
+
+.radio input:checked ~ label svg {
+  fill: #ffa723;
+}
+
+  
+  
+  /* ============================================== */
+
+  
+
+  
+  
+  
+  
+  

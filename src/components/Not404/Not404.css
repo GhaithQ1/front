@@ -1,0 +1,40 @@
+.Not404{
+  height: 100vh;
+display: flex;
+align-items: center;
+justify-content:center ;
+}
+
+
+.Not404 .error-container { 
+  text-align: center; 
+  background-color: #fff; 
+  padding: 40px; 
+  border-radius: 5px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+} 
+
+.Not404 .error-container  h1 { 
+  font-size: 5rem; 
+  color: var(--first-color); 
+} 
+
+.Not404 .error-container  p { 
+  font-size: 1.5rem; 
+  color: #333; 
+  margin-bottom: 20px; 
+} 
+
+.Not404 .error-container  a { 
+  text-decoration: none; 
+  background-color: var(--first-color); 
+  color: #fff; 
+  padding: 10px 20px; 
+  border-radius: 3px; 
+  font-weight: bold; 
+  transition: background-color 0.3s ease; 
+} 
+
+.Not404 .error-container a:hover { 
+  background-color: var(--first-color); 
+}

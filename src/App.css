@@ -1,0 +1,176 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+
+  font-family: "Cairo", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:"slnt" 0;
+}
+
+
+
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: #474af0;
+  --title-color: #1f2333;
+  --text-color: hsl(228deg 7.66% 34.19%);
+  --body-color: hsl(228, 100%, 99%);
+  --shadow-color: hsla(228, 80%, 4%, .1);
+  --input--color:hsl(228, 100%, 99%);
+  --secshen--color:hsl(228deg 21.74% 95.49%);
+  --da-color : #d9e5ff ;
+  --li-color : #fff ;
+  --sec-color:#fafbff;
+
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Nunito Sans", system-ui;
+  --normal-font-size: .938rem;
+  --smaller-font-size: .75rem;
+  --tiny-font-size: .75rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-semi-bold: 600;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+
+
+/*=============== VARIABLES DARK THEME ===============*/
+.root_da {
+  --first-color: #474af0;
+  --title-color: hsl(228, 18%, 96%);
+  --text-color: hsl(228deg 8.09% 71.42%);
+  --body-color: hsl(228, 24%, 16%);
+  --shadow-color: hsla(228, 80%, 4%, .3);
+  --input--color:hsl(228, 24%, 16%);
+  --secshen--color: hsl(228deg 24.08% 17.39%);
+  --da-color : hsl(228, 24%, 16%);
+  --li-color : #121b4d ;
+  --sec-color:hsl(228, 24%, 16%);
+
+}
+
+
+/* @media (min-width: 768px){
+  .container{
+      width: 750px;
+  }
+}
+@media (min-width: 992px){
+  .container{
+      width: 970px;
+  }
+  
+}
+@media (min-width: 1200px){
+  .container{
+      width: 1170px;  
+  }
+} */
+
+
+.coolinput .input::placeholder{
+  font-size: 17px;
+  color: var(--text-color);
+}
+
+
+
+
+
+.container{
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media(max-width:991px){
+  .container{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media(max-width:768px){
+  .container{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+
+
+
+
+a{
+  text-decoration: none;
+}
+
+select option{
+  background: var(--sec-color);
+  color: var(--title-color);
+}
+
+
+
+
+p{
+  text-align: end;
+}
+h1{
+  text-align: end;
+  color: var(--title-color);
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+h2{
+  text-align: end;
+}
+h3{
+  text-align: end;
+}
+span{
+  text-align: end;
+}
+p{
+  text-align: end;
+}
+
+
+
+/* From Uiverse.io by sekaiking */ 
+.button {
+  background-color: white;
+  color: black;
+  border-radius: 10em;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 1em 2em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  /* border: 1px solid black;
+  box-shadow: 0 0 0 0 black; */
+  box-shadow: 2px 5px 0 0 black;
+}
+
+.button:hover {
+  box-shadow: 6px 8px 0 0 black;
+};
+
+.button:active {
+  box-shadow: 0 0 0 0 black;
+};
